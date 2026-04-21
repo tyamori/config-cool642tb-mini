@@ -87,7 +87,7 @@
 &trans  &trans  &trans  &trans         &trans  &trans      &trans  &trans                                                         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(LA(LEFT)) LG(LA(RIGHT))>;
+            sensor-bindings = <&inc_dec_kp LA(LC(LEFT)) LA(LC(RIGHT))>;
         };
 
         scroll {
