@@ -17,17 +17,17 @@
     combos {
         compatible = "zmk,combos";
 
-        MB1 {
+        mb1 {
             bindings = <&mkp MB1>;
             key-positions = <17 18>;
         };
 
-        MB2 {
+        mb2 {
             bindings = <&mkp MB2>;
             key-positions = <18 19>;
         };
 
-        MB3 {
+        mb3 {
             bindings = <&mkp MB3>;
             key-positions = <19 20>;
         };
