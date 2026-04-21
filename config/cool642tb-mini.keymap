@@ -31,6 +31,16 @@
             bindings = <&mkp MB3>;
             key-positions = <19 20>;
         };
+
+        bracket_left {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <7 8>;
+        };
+
+        bracket_right {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <8 9>;
+        };
     };
 
     behaviors {
