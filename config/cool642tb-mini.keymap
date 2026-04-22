@@ -71,8 +71,8 @@
             bindings = <
 &mt ESC Q         &kp W           &kp E             &kp R               &kp T                                             &kp Y            &kp U                &kp I              &kp O            &kp P
 &mt LEFT_WIN A    &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &mt LEFT_GUI G  &kp LC(Y)        &kp PRINTSCREEN  &mt RIGHT_GUI H  &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp MINUS
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V               &kp B           &kp LC(Z)        &kp ESC          &lt 3 N          &kp M                &kp COMMA          &kp DOT          &kp QUESTION
-&kp TAB           &kp C_MUTE      &kp LEFT_GUI      &mt LANG1 LANG2     &lt 2 TAB       &lt 1 SPACE      &kp DELETE       &lt 4 ENTER                                                               &kp SLASH
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V               &kp B           &kp LC(Z)        &kp ESC          &lt 5 N          &kp M                &kp COMMA          &kp DOT          &kp QUESTION
+&kp TAB           &kp C_MUTE      &kp LEFT_GUI      &mt LANG1 LANG2     &lt 2 TAB       &lt 1 SPACE      &kp DELETE       &lt 3 ENTER                                                               &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -100,17 +100,6 @@
             sensor-bindings = <&inc_dec_kp LA(LC(LEFT)) LA(LC(RIGHT))>;
         };
 
-        scroll_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-
-            label = "SCROLL";
-        };
-
         bt {
             bindings = <
 &trans        &trans        &trans        &trans        &trans                            &trans  &trans  &trans  &trans  &trans
@@ -120,6 +109,26 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        scroll_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+
+            label = "SCROLL";
         };
     };
 };
